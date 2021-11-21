@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Shoe</title>
+
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/d5b05e3e5b.js" crossorigin="anonymous"></script>
+    <!-- End of Font -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- End of Custom CSS -->
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i></i>
+            </span>
+            <img src="./images/logo.svg" alt="Logo">
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Middle text  -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">Shoe Collection</h1>
+            <button class="banner-btn" onClick="document.getElementById('view').scrollIntoView();">Browse below</button>
+        </div>
+    </header>
+    <!-- End of Middle text  -->
+
+    <!-- Products -->
+    <section class="products", id="view">
+        <div class="section-title">
+            <h2>All Shoes</h2>
+        </div>
+        <div class="products-center">
+            <!-- To be filled in JavaScript -->
+        </div>
+        <!-- Out of Stock Products -->
+        <div class="products-center">
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-9.jpg" alt="product" class="product-img" onclick="window.open(this.src)"/>
+                    <button class="bag-btn3" data-id="8">
+                        <i class="fas fa-shopping-cart"></i>Sold Out
+                    </button>
+                </div>
+                <h3>Adidas Superstar White/Black</h3>
+                <h4>£74.99</h4>
+            </article>
+
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-10.jpg" alt="product" class="product-img" onclick="window.open(this.src)"/>
+                    <button class="bag-btn3" data-id="8">
+                        <i class="fas fa-shopping-cart"></i>Sold Out
+                    </button>
+                </div>
+                <h3>Converse High Red</h3>
+                <h4>£65.99</h4>
+            </article>
+
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-11.jpg" alt="product" class="product-img" onclick="window.open(this.src)"/>
+                    <button class="bag-btn3" data-id="8">
+                        <i class="fas fa-shopping-cart"></i>Sold Out
+                    </button>
+                </div>
+                <h3>Unde Armour Project Rock 1 Black/White</h3>
+                <h4>£119.99</h4>
+            </article>
+
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-12.jpg" alt="product" class="product-img" onclick="window.open(this.src)"/>
+                    <button class="bag-btn3" data-id="8">
+                        <i class="fas fa-shopping-cart"></i>Sold Out
+                    </button>
+                </div>
+                <h3>Under Armour HOVR Phantom 2 White/Grey</h3>
+                <h4>£94.99</h4>
+            </article>
+        </div>
+        <!-- End of Out of Stock Products -->
+    </section>
+    <!--End of Products -->
+    
+    <!-- Cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Your Cart</h2>
+            <div class="cart-content">
+                <!-- Cart item  -->
+                
+                <!-- End of Cart item  -->
+            </div>
+            <div class="cart-footer">
+                <h3>Your Total : £ <span class="cart-total"></span></h3>
+                <button class="proceed-cart banner-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Cart -->
+    <!-- Newsletter -->
+    <form action="action_page.php">
+        <div class="container-2">
+            <h2>Subscribe to receive weekly in-store offers</h2>
+        </div>
+    
+        <div class="container" style="background-color:white">
+            <input type="text" id="email_name" placeholder="Name" name="name" required>
+            <input type="text" id="email" placeholder="Email address" name="mail" required>
+        </div>
+    
+        <div class="container">
+            <form method="post">
+                <input type="button" value="Subscribe" onclick="sendMail()" />
+            </form>
+        </div>
+    </form>
+    <!-- End of Newsletter -->
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our mobile App</h3>
+                    <p>Download our Android and iOS App</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store" class="link-click"><img src="images/play-store.png"></a>
+                        <a href="https://www.apple.com/app-store/" class="link-click"><img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo-2.svg" alt="Logo">
+                    <p>Our purpose is to provide the best shoes to our clients.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <div class="popup" id="popup-2">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="showDelivery()">&times;</div>
+                                <h1>Delivery Dates and Time</h1>
+                                <br>
+                                <p>Products are shipped every Tuesday at 2pm.</p>
+                                <p>The estimated time for delivery is around 1 week.</p>
+                                <p>If you have not received you product during the next 2 weeks please call 07397497111.</p>
+                            </div>
+                        </div>
+                        <a class="link-click" onclick="showDelivery()">
+                            <li>Delivery Dates and Time</li>
+                        </a>
+                        
+                        <div class="popup" id="popup-1">
+                            <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn" onclick="showReturn()">&times;</div>
+                                    <h1>Return Policy</h1>
+                                    <br>
+                                    <p>For more information call one of the following numbers (9am-5pm Monday to Friday):</p>
+                                    <br>
+                                    <ul>
+                                        <li>Women products: 07971836461</li>
+                                        <li>Men products: 07294746161</li>
+                                        <li>All other concerns: 07397497111</li>
+                                        <li>Email: goldenshoehalifax.com</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <a class="link-click" onclick="showReturn()">
+                            <li>Return Policy</li>
+                        </a>
+
+                        <div class="popup" id="popup-3">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="showAbout()">&times;</div>
+                                <h1>About Us</h1>
+                                <br>
+                                <p>A well-known British shoe company, Golden Shoe, with a flagship store in London</p>
+                                <p>We aim to provide the best experience and products to all of our customers</p>
+                                <br>
+                            </div>
+                        </div>
+                        <a class="link-click" onclick="showAbout()">
+                        <li>About Us</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us On:</h3>
+                    <ul>
+                        <a href="https://www.facebook.com" class="link-click"><li>Facebook</li></a>
+                        <a href="https://www.Instagram.com" class="link-click"><li>Instagram</li></a>
+                        <a href="https://www.twitter.com" class="link-click"><li>Twitter</li></a>
+                        <a href="https://www.linkedin.com" class="link-click"><li>LinkedIn</li></a>
+                        <a href="https://www.tiktok.com" class="link-click"><li>TikTok</li></a>
+                        <a href="https://www.youtube.com" class="link-click"><li>YouTube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2021 Golden Shoes. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- End of Footer -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Rose Gold Classic",
+        "price": 89.99,
+        "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "New Balance RevLite Hunter Green",
+        "price": 69.99,
+        "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Nike Air Force High White/Black",
+        "price": 109.99,
+        "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Nike Air Force Low Brown/Black",
+        "price": 95.99,
+        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Converse High Black",
+        "price": 65.99,
+        "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Nike Free Red",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Air Jordan 1 White/Red",
+        "price": 129.99,
+        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } },
+        "soldout": "No"
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Vans Yellow",
+        "price": 34.99,
+        "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } },
+        "soldout": "Yes"
+      }
+    }
+  ]
+}
